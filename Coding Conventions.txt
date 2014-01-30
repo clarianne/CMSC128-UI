@@ -1,0 +1,89 @@
+CMSC 128 AB-6L - Coding Conventions
+
+1. There are only two controllers for the system :
+	(a) "admin.php" contains all the functionalities for the administrator
+	(b) "borrower.php" contains all the functionalities for the borrower
+
+2. Views and Models directory contains two other directories
+	(a) "admin" directory contains all the models and views for the admin
+	(b) "user" directory contains all the models and views for the user
+
+3. Names of the views and models should be the named with the method that will call it in the controller and suffixed by either model or view.
+	Example : 	public function reservation_queue(){} ( method in the controller file )
+				reservation_queue_model.php ( name of the model file )
+				reservation_queue_view.php ( name of the view file )
+
+4. Class names always start with capital letter and each word must be separated by an underscore. 
+	Example : class Borrower   ;   class Login_model
+
+5. Method names are composed of lowercase letters and each word must be separated by an underscore. Method names must be named according to their function. Avoid long method names. 
+	Example : public function get_reservations()
+
+6. Variables should contain only lowercase letters, use underscore separators, and be reasonably named to indicate their purpose and contents. Very short, non-word variables should only be used as iterators in for() loops.
+
+7. Use $data as the storage for the results from the database. The name of its index must also be named according to its contents.
+
+8. Code must be well-documented. Use comment in ending PHP body tag. For short PHP tags, use full PHP tags ( <?php echo $foo; ?> ) .
+	
+	<?php
+
+	/**
+	* Class definition
+	*
+	* @filename	File Name
+	* @date created	date month year
+	* @author	Author Name
+	*/
+	class Super_class {
+	
+
+		/**
+		* Encodes string for use in XML
+		*
+		* @access	public
+		* @param	string
+		* @return	string
+		*
+		*/
+		function xml_encode($str){}
+	}
+
+	/* 	End of file class_name.php
+	* 	Location: ./application/controllers/class_name.php 
+	*/
+
+9. Use single line comments within codes. Observe proper readability.
+
+10. Use CodeIgniter functions for SQL statements. Break lines for readability. 
+	Example :	$query = $this->db->query("SELECT quantity-borrowedcopy AS available 
+											FROM librarymaterial 
+											WHERE materialid LIKE '${temp}'");
+
+11. Observe proper indentation of code, use tab ( 4 spaces ) as indentation. Never use spaces for indentations. 
+
+12. Constants must be in uppercase letters. Name must define its use. Example : MAX_VALUE
+	( See defining constants in PHP )
+
+13. Comment debugging codes. No var_dump() or print_r().
+
+14.  Private methods must be prefixed with underscore. 
+	Example :  private _counter(){}
+
+15. Always provide argument defaults or  optional parameters. 
+	Example :	public function add( $x=0, $y=0 ){}
+
+16. Only one class per file.
+
+17. Use URI Routing ( See CodeIgniter tutorials ).
+
+18. Associative array names in routes.php must define the controller or method to be loaded. Organization of routes is preferred.
+	Example : 	$routes['reservation']='admin/reservation_queue';
+				
+				Organize routes
+				$routes['view/reservation']='admin/reservation_queue';
+				$routes['view/borrowed']='admin/borrowed_list';
+				$routes['view/accounts']='admin/account_roster';
+
+19. Make your code work, then optimize.
+
+20. Spread love.

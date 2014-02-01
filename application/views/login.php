@@ -53,14 +53,14 @@
 
     <div class="container">
 
-      <form class="form-signin" role="form">
-        <h2 class="form-signin-heading">Please Register</h2>
-	<input type="text" class="form-control" placeholder="Student Number: (xxxx-xxxxx)" required autofocus>
-        <input type="text" class="form-control" placeholder="Username:" required autofocus>
-	<input type="text" class="form-control" placeholder="Email address" required autofocus>
-        <input type="password" class="form-control" placeholder="Password:" required>
-        <input type="password" class="form-control" placeholder="Re-type Password:" required>
-        <button class="btn btn-lg btn-primary btn-block" type="submit">Submit</button>
+      <form class="form-signin" role="form" method="post" action="<?php echo $PHP_SELF;?>">
+        <h2 class="form-signin-heading">Please sign in</h2>
+        <input type="text" class="form-control" placeholder="Student Number" required autofocus>
+        <input type="password" class="form-control" placeholder="Password" required>
+        <label class="checkbox">
+          <input type="checkbox" value="remember-me"> Remember me
+        </label>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
       </form>
 
     </div> <!-- /container -->
@@ -75,7 +75,11 @@
     <br />
     <br />
     <br />
-   
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
   
 
    <!-- FOOTER -->

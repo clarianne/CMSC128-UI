@@ -70,7 +70,7 @@ enhance locally produced computer products.</p>
           <img style="width: 140px; height: 140px;" class="img-circle"  alt="140x140" src="dist/images/Search.jpg">
           <h2>Search</h2>
           <p>Select from a wide range of learning materials in the field of computer science.</p>
-          <p><a class="btn btn-default" href="outside_search.php" role="button">View details »</a></p>
+          <p><a class="btn btn-default" href="outside_search.php" role="button">Search library materials</a></p>
         </div><!-- /.col-lg-4 -->
 
 	<div class="col-lg-4">
@@ -83,7 +83,7 @@ enhance locally produced computer products.</p>
           <img  style="width: 140px; height: 140px;" class="img-circle" alt="140x140" src="dist/images/ICSlogo.jpg">
           <h2>ICS Courses</h2>
           <p>Check out all the cool courses that Institute of Computer Science offers.</p>
-          <p><a class="btn btn-default" href="http://ics.uplb.edu.ph/courses/ugrad" role="button">View details »</a></p>
+          <p><a class="btn btn-default" href="http://ics.uplb.edu.ph/courses/ugrad" role="button">View details</a></p>
         </div><!-- /.col-lg-4 -->
         
       </div><!-- /.row -->

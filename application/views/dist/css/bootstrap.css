@@ -47,6 +47,7 @@ body {
   padding:0;
   margin:0;	/*original*/
   margin:0 auto;
+  color: #dbdbff;
 
 }
 .center_box {
@@ -5947,6 +5948,18 @@ button.close {
 }
 
 .modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1040;
+  display: none;
+  overflow: auto;
+  overflow-y: scroll;
+}
+
+.modal_updated {
   position: fixed;
   top: 0;
   right: 0;

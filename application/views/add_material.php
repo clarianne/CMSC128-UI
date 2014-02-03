@@ -54,13 +54,24 @@
     <div class="container">
 
       <form class="form-signin" role="form" method="post" action="<?php echo $PHP_SELF;?>">
-        <h2 class="form-signin-heading">Please sign in</h2>
-        <input type="text" class="form-control" placeholder="Student Number" required autofocus>
-        <input type="password" class="form-control" placeholder="Password" required>
-        <label class="checkbox">
-          <input type="checkbox" value="remember-me"> Remember me
-        </label>
-        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+        <h2 class="form-signin-heading">Fill up the necessary info: </h2>
+	<select name="mydropdown" class="form-control" placeholder="Course" required autofocus >
+		<option value="main" SELECTED>COURSE</option>		
+		<option value="2">CMSC 2</option>
+		<option value="11">CMSC 11</option>
+		<option value="21">CMSC 21</option>
+		<option value="22">CMSC 22</option>
+		<option value="others">OTHERS</option>
+	</select>
+	<input type="text" class="form-control" placeholder="Material ID (XXXX-XX)" required autofocus>
+
+	<input type="text" class="form-control" placeholder="Type" required autofocus>
+        <input type="password" class="form-control" placeholder="Title:" required>
+        <input type="password" class="form-control" placeholder="Author:" required>
+       	<input type="password" class="form-control" placeholder="Year Published:" required>
+       	<input type="password" class="form-control" placeholder="Edition:" required>
+	
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Submit</button>
       </form>
 
     </div> <!-- /container -->
@@ -75,11 +86,20 @@
     <br />
     <br />
     <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
+   
   
 
-<?php include 'home_footer.php'; ?>
+   <!-- FOOTER -->
+  <footer>
+        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p>© 2013 Company, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+      </footer>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="dist/js/jquery-1.js"></script>
+    <script src="dist/js/bootstrap.js"></script>
+    <script src="dist/js/holder.js"></script>
+  
+
+</body></html>

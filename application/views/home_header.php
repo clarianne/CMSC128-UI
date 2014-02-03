@@ -41,12 +41,6 @@
           <a class="navbar-brand" href="index.php"><img src="dist/images/logowhite.png" height="30px"></a>
         </div>
         <div class="navbar-collapse collapse">
-          <form class="navbar-form navbar-left" role="search">
-            <div class="form-group">
-              <input class = "search" type="text" class="form-control" placeholder="Type keyword...">
-            </div>
-            <button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-search"></span></button>
-          </form>
           <form class="navbar-form navbar-right" role="form">
             <div class="form-group">
               <input placeholder="Email" class="form-control" type="text">

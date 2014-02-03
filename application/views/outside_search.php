@@ -56,10 +56,12 @@ function toggle() {
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Search</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li class="active"><a href="#">Profile</a></li>
+            <li><a href="#about">Search</a></li>
           </ul>
+		  <form class="navbar-form navbar-right" role="search">
+            <button type="submit" class="btn btn-primary">Log out</button>
+          </form>
         </div><!--/.navbar-collapse -->
       </div>
   </div>
@@ -85,57 +87,19 @@ function toggle() {
 				 	<!-- Begin Box 1 -->
 						<table bgcolor="#dedede" cellspacing="0" cellpadding="2" border="0" style="width: 100%; border-collapse: collapse; bordercolor: #111111">
 							<tr>
-								<td width="100" align="center" nowrap><b>Search Field</b></td>
-								<td width="300" align="center" nowrap><b>Search Expression</b></td>
-								<td width="80" align="center" nowrap><b>Operator</b></td>
-							</tr>
-							<tr>
 								<td align="left">
 									<select size="1" name="field1">
 										<option value="author">Author</option>
-										<option value="title" SELECTED>Title</option>
-										<option value="keyword">Any Keyword</option>
-									</select>
-								</td>
-								<td align="left"><input name="query1" size="50" style="width: 370px" />&nbsp;</td>
-								<td align="left">
-									<select size="1" name="operator1">
-										<option selected="true" value="AND">AND</option>
-										<option value="OR">OR</option>
-									</select>
-								</td>
-							</tr>
-							<tr>
-								<td align="left">
-									<select size="1" name="field2">
-									<option value="author">Author</option>
+										<option value="author">Course Subject</option>
 										<option value="title" SELECTED>Title</option>
 										<option value="keyword">Any Keyword</option>
 									</select>
 								</td>
 								<td align="left"><input name="query2" size="50" style="width: 370px" />&nbsp;</td>
 								<td align="left">
-									<select size="1" name="operator2">
-									    <option selected="true" value="AND">AND</option>
-									    <option value="OR">OR</option>
-									</select>
+									<input type="submit" value="    Search    " name="eventSubmit_doSearchadvanced" id="defaultButton" />&nbsp;&nbsp;
+									<input type="reset" value="    Reset    " name="btnReset" /></td>
 								</td>
-							</tr>
-							<tr>
-								<td align="left">
-									<select size="1" name="field3">
-								       	<option value="course" SELECTED>Course</option>
-								   		<option value="accno">CMSC 2</option>
-										<option value="callno">CMSC 11</option>
-										<option value="isbn">CMSC 21</option>
-										<option value="publisher">CMSC 22</option>
-										<option value="subject">CMSC 56</option>
-										<option value="title">CMSC 57</option>
-										<option value="keyword">Any Course</option>
-									</select>
-								</td>
-								<td align="left">&nbsp;</td>
-								<td align="left">&nbsp;</td>    
 							</tr>	
 </table>				 
 				 	<!-- End Box 1 -->
@@ -156,12 +120,13 @@ function toggle() {
 
 <table style="display:none;" id="hidethis" style="padding-left: 0px; padding-right: 0px; padding-top: 2px; padding-bottom: 2px; width: 100%; bordercolor: #111111" width="100%" border="0" >
           <tr>
-				                  <td valign="middle" width="150" align="left" bgcolor="#dedede" rowspan="2" nowrap>&nbsp; <b>Format:</b></td>
-				                  <td valign="middle" width="90" align="left" style="vertical-align: middle" bgcolor="#dedede" nowrap><label><input type="checkbox" name="mtype" value="0" class="radio" />book</label></td>
-								  <td valign="middle" width="90" align="left" style="vertical-align: middle" bgcolor="#dedede" nowrap><label><input type="checkbox" name="mtype" value="4" class="radio" />thesis</label></td>
-								  <td valign="middle" width="90" align="left" style="vertical-align: middle" bgcolor="#dedede" nowrap><label><input type="checkbox" name="mtype" value="2" class="radio" />magazine</label></td>                      
-							      <td valign="middle" width="90" align="left" style="vertical-align: middle" bgcolor="#dedede" nowrap><label><input type="checkbox" name="mtype" value="3" class="radio" />media</label></td>
-							      <td valign="middle" width="90" align="left" style="vertical-align: middle" bgcolor="#dedede" nowrap><label><input type="checkbox" name="mtype" value="8" class="radio" />others</label></td>							  
+				                  <td valign="middle" width="160" align="left" bgcolor="#dedede" rowspan="2" nowrap>&nbsp; <b>Format:</b></td>
+				                  <td valign="middle" width="90" align="left" style="vertical-align: middle" bgcolor="#dedede" nowrap><label><input type="checkbox" name="mtype" value="0" class="radio" />Book</label></td>
+								  <td valign="middle" width="90" align="left" style="vertical-align: middle" bgcolor="#dedede" nowrap><label><input type="checkbox" name="mtype" value="4" class="radio" />Thesis</label></td>
+								  <td valign="middle" width="90" align="left" style="vertical-align: middle" bgcolor="#dedede" nowrap><label><input type="checkbox" name="mtype" value="2" class="radio" />SP</label></td>                      
+							      <td valign="middle" width="90" align="left" style="vertical-align: middle" bgcolor="#dedede" nowrap><label><input type="checkbox" name="mtype" value="3" class="radio" />Journal</label></td>
+							      <td valign="middle" width="90" align="left" style="vertical-align: middle" bgcolor="#dedede" nowrap><label><input type="checkbox" name="mtype" value="8" class="radio" />CD</label></td>		
+								  <td valign="middle" width="90" align="left" style="vertical-align: middle" bgcolor="#dedede" nowrap><label><input type="checkbox" name="mtype" value="8" class="radio" />Reference</label></td>	
 								</tr>
 </table>
 
@@ -204,13 +169,6 @@ function toggle() {
 
 
 		</td>
-	</tr>
-
-	<tr>
-	    <td valign="middle" align="center" style="vertical-align: middle" height="40">
-	      <input type="submit" value="    Search    " name="eventSubmit_doSearchadvanced" id="defaultButton" />&nbsp;&nbsp;
-	      <input type="reset" value="    Reset    " name="btnReset" /></td>
-		<input type="hidden" name="mod" value="$data.getParameters().get("mod")">
 	</tr>
 
 	<tr>

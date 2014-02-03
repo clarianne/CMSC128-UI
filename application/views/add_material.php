@@ -39,13 +39,6 @@
           </button>
           <a class="navbar-brand" href="#"><img src="dist/images/logowhite.png" height="30px"></a>
         </div>
-        <div class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Search</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div><!--/.navbar-collapse -->
       </div>
   </div>
 

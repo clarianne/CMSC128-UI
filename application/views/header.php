@@ -11,7 +11,7 @@
     <title>ICS-iLS</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="dist/css/bootstrap.css" rel="stylesheet">
+    <link href="<?php echo base_url();?>dist/css/bootstrap.css" rel="stylesheet">
 
     <!-- Just for debugging purposes. Don't actually copy this line! -->
     <!--[if lt IE 9]><script src="../../docs-assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -23,8 +23,8 @@
     <![endif]-->
 
     <!-- Custom styles for this template -->
-    <link href="dist/css/carousel.css" rel="stylesheet">
-	<script src="dist/js/bootstrap.js" type="text/javascript"></script>
+    <link href="<?php echo base_url();?>dist/css/carousel.css" rel="stylesheet">
+	<script src="<?php echo base_url();?>dist/js/bootstrap.js" type="text/javascript"></script>
   <style type="text/css" id="holderjs-style"></style></head>
 <!-- NAVBAR
 ================================================== -->

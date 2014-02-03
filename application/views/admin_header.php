@@ -24,6 +24,7 @@
 
     <!-- Custom styles for this template -->
     <link href="dist/css/carousel.css" rel="stylesheet">
+    <link href="dist/css/signin.css" rel="stylesheet">
   <style type="text/css" id="holderjs-style"></style></head>
 <!-- NAVBAR
 ================================================== -->
@@ -39,22 +40,8 @@
           </button>
           <a class="navbar-brand" href="#"><img src="dist/images/logowhite.png" height="30px"></a>
         </div>
-        <div class="navbar-collapse collapse">
-          <form class="navbar-form navbar-left" role="search">
-            <div class="form-group">
-              <input class = "search" type="text" class="form-control" placeholder="Type keyword...">
-            </div>
-            <button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-search"></span></button>
-          </form>
-          <form class="navbar-form navbar-right" role="form">
-            <div class="form-group">
-              <input placeholder="Email" class="form-control" type="text">
-            </div>
-            <div class="form-group">
-              <input placeholder="Password" class="form-control" type="password">
-            </div>
-            <button type="submit" class="btn btn-success">Sign in</button>
-          </form>
-        </div><!--/.navbar-collapse -->
+		<form class="navbar-form navbar-right" role="form">
+            <button type="submit" class="btn btn-success">Log out</button>
+        </form>
       </div>
     </div>

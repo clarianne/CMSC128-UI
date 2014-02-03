@@ -24,6 +24,7 @@
 
     <!-- Custom styles for this template -->
     <link href="dist/css/carousel.css" rel="stylesheet">
+    <link href="/dist/css/signin.css" rel="stylesheet">
   <style type="text/css" id="holderjs-style"></style></head>
 <!-- NAVBAR
 ================================================== -->
@@ -53,7 +54,7 @@
 
     <div class="container">
 
-      <form class="form-signin" role="form" method="post" action="<?php echo $PHP_SELF;?>">
+      <form class="form-signin" role="form" method="post" >
         <h2 class="form-signin-heading">Please sign in</h2>
         <input type="text" class="form-control" placeholder="Student Number" required autofocus>
         <input type="password" class="form-control" placeholder="Password" required>
